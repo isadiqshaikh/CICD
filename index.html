@@ -2,314 +2,172 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sadiq Shaikh</title>
+    <title>Sadiq Shaikh - Front-End Developer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #f4f4f9;
+            line-height: 1.6;
+        }
 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        header {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
 
+        header h2 {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #007BFF;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            color: #007BFF;
+            margin-bottom: 15px;
+        }
+
+        .skills span {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .progress-bar {
+            background: #ddd;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            height: 10px;
+        }
+
+        .progress-bar div {
+            background: #007BFF;
+            height: 100%;
+            width: 0;
+            transition: width 0.5s ease-in-out;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            margin: 10px;
+            text-align: center;
+            flex: 1 1 calc(30% - 20px);
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    
-<!-- header section starts  -->
+    <header>
+        <h1>Sadiq Shaikh</h1>
+        <h2>Hey, I'm a front-end developer</h2>
+    </header>
 
-<header class="header">
-
-    <div class="user">
-        <img src="image/user-img.jpeg" alt="">
-        <h3>Sadiq Shaikh</h3>
-        <p>Front-End Developer</p>
-    </div>
-
-    <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#about">about</a>
-       <!-- <a href="#skills">skills</a> -->
-        <a href="#services">services</a>
-        <a href="#portfolio">portfolio</a>
-        <a href="#contact">contact</a>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-</header>
+    <section id="about">
+        <h3>About Me</h3>
+        <p>My name is Sadiq Shaikh. I am from Pune and currently pursuing a BTech degree at Vishwakarma Institute of Information Technology. I aim to have a challenging career where I can grow and contribute to an organization's success.</p>
+    </section>
 
-<!-- header section ends -->
+    <section id="skills">
+        <h3>Skills</h3>
+        <div class="skills">
+            <span>Web Development: <div class="progress-bar"><div style="width: 90%;"></div></div></span>
+            <span>Graphic Design: <div class="progress-bar"><div style="width: 75%;"></div></div></span>
+            <span>App Development: <div class="progress-bar"><div style="width: 80%;"></div></div></span>
+            <span>C: <div class="progress-bar"><div style="width: 90%;"></div></div></span>
+            <span>C++: <div class="progress-bar"><div style="width: 80%;"></div></div></span>
+            <span>DSA: <div class="progress-bar"><div style="width: 65%;"></div></div></span>
+        </div>
+    </section>
 
-<div id="menu-btn" class="fas fa-bars"></div>
-
-<!-- theme toggler  -->
-
-<div id="theme-toggler" class="fas fa-moon"></div>
-
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-    <div class="content">
-        <h3>Sadiq Shaikh</h3>
-        <p>Hey, I'm a front-end developer</p>
-        <a href="https://drive.google.com/file/d/1_4fL1D6zWrYZ5iVIhf41JQudrBFKqiK9/view?usp=drivesdk" class="btn">download CV</a>
-    </div>
-
-    <div class="share">
-        <a href="https://www.facebook.com/isadiqshaikh?mibextid=9R9pXO" class="fab fa-facebook-f"></a>
-        <a href="https://x.com/isadiqshaikh?t=dUUFswcBGyehlaISJjgLUA&s=09" class="fab fa-twitter"></a>
-        <a href="https://instagram.com/sadiq.apk?igshid=NzZlODBkYWE4Ng==" class="fab fa-instagram"></a>
-        <a href="https://www.linkedin.com/in/sadiq-shaikh-34884b234" class="fab fa-linkedin"></a>
-        <a href="https://github.com/isadiqshaikh" class="fab fa-github"></a>
-    </div>
-
-</section>
-
-<!-- home section ends -->
-
-<!-- about section starts  -->
-
-<section class="about" id="about">
-
-    <h1 class="heading"> <span>about</span> me </h1>
-
-    <div class="row">
-
-        <!-- <div class="box-container">
-            <div class="box">
-                <h3>2+</h3>
-                <p>Months of experience</p>
+    <section id="services">
+        <h3>My Services</h3>
+        <div class="services">
+            <div class="service">
+                <h4>Web Development</h4>
+                <p>Create responsive websites using HTML, CSS, and JS.</p>
             </div>
-            <div class="box">
-                <h3>Soon</h3>
-                <p>satisfied clients</p>
+            <div class="service">
+                <h4>Graphic Design</h4>
+                <p>Design stunning graphics for web and print.</p>
             </div>
-            <div class="box">
-                <h3>Trying</h3>
-                <p>working hours</p>
-            </div>
-            <div class="box">
-                <h3>Soon</h3>
-                <p>awards won</p>
+            <div class="service">
+                <h4>App Development</h4>
+                <p>Build intuitive Android apps with optimized performance.</p>
             </div>
         </div>
-    -->
+    </section>
 
-        <div class="content">
-            <h3>my name is <span>Sadiq Shaikh</span></h3>
-            <p>I am from Pune. I am a BTech Student from Vishwakarma Institute of Information Technology.
-                I want to pursue a challenging career and be part of a progressive organization where
-                 I can enhance my knowledge and utilize my skills towards the growth of the organization. </p>
-            <a href="http://bio.link/isadiqshaikh" class="btn">contact me</a>
-        </div>
+    <section id="contact">
+        <h3>Contact Me</h3>
+        <p>Feel free to reach out for collaborations or inquiries.</p>
+    </section>
 
-    </div>
+    <footer>
+        <p>© 2024 Sadiq Shaikh. All rights reserved.</p>
+    </footer>
 
-    <div class="row">
-
-        <div class="progress">
-            <h3> web Development<span>90%</span> </h3>
-            <div class="bar bar-1-1"><span></span></div>
-            <h3> graphic designer <span>75%</span> </h3>
-            <div class="bar bar-1-2"><span></span></div>
-            <h3> App Development <span>80%</span> </h3>
-            <div class="bar bar-1-3"><span></span></div>
-           
-           
-           
-        </div>
-
-        <div class="progress">
-            
-            
-            <h3> C <span>90%</span> </h3>
-            <div class="bar bar-2-3"><span></span></div>
-            <h3> C++ <span>80%</span> </h3>
-            <div class="bar bar-2-3"><span></span></div>
-            <h3> DSA <span>65%</span> </h3>
-            <div class="bar bar-2-3"><span></span></div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- about section ends -->
-
-
-<!-- skills section starts  -->
-<!--
-<section class="skills" id="skills"></section>
-<div class="row">
-
-    <div class="progress">
-        <h3> web Development<span>90%</span> </h3>
-        <div class="bar bar-1-1"><span></span></div>
-        <h3> graphic design <span>75%</span> </h3>
-        <div class="bar bar-1-2"><span></span></div>
-        <h3> App Development <span>80%</span> </h3>
-        <div class="bar bar-1-3"><span></span></div>
-        <h3> Content Writer<span>90%</span> </h3>
-        <div class="bar bar-1-1"><span></span></div>
-    </div>
-
-    <div class="progress">
-        <h3> HTML <span>95%</span> </h3>
-        <div class="bar bar-2-1"><span></span></div>
-        <h3> CSS <span>80%</span> </h3>
-        <div class="bar bar-2-2"><span></span></div>
-        <h3> DSA <span>65%</span> </h3>
-        <div class="bar bar-2-3"><span></span></div>
-        <h3> C <span>90%</span> </h3>
-        <div class="bar bar-2-3"><span></span></div>
-        <h3> C++ <span>80%</span> </h3>
-        <div class="bar bar-2-3"><span></span></div>
-    </div>
-
-</div>
-
--->
-<!-- skills section ends  -->
-
-<!-- services section starts  -->
-
-<section class="services" id="services">
-
-    <h1 class="heading"> my <span>services</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <i class="fas fa-code"></i>
-            <h3>web design</h3>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas delectus, laboriosam nulla dolore in</p>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-paint-brush"></i>
-            <h3>graphic design</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas delectus, laboriosam nulla dolore in</p>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-mobile"></i>
-            <h3>App design</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas delectus, laboriosam nulla dolore in </p>
-        </div>
-<!--
-        <div class="box">
-            <i class="fas fa-bullhorn"></i>
-            <h3>digital marketing</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas delectus, laboriosam nulla dolore in.</p>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-search-dollar"></i>
-            <h3>SEO marketing</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas delectus, laboriosam nulla dolore in.</p>
-        </div>
-
-        <div class="box">
-            <i class="fab fa-wordpress"></i>
-            <h3>wordpress</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas delectus, laboriosam nulla dolore in.</p>
-        </div>
-    -->
-    </div>
-
-</section>
-
-<!-- services section ends -->
-
-<!-- portfolio section starts  -->
-
-<section class="portfolio" id="portfolio">
-
-    <h1 class="heading"> my <span>portfolio</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="image/img-1.jpg" alt="">
-            <div class="content">
-                <h3>project 01</h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/img-1.jpg" alt="">
-            <div class="content">
-                <h3>project 02</h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/img-1.jpg" alt="">
-            <div class="content">
-                <h3>project 03</h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/img-1.jpg" alt="">
-            <div class="content">
-                <h3>project 04</h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/img-1.jpg" alt="">
-            <div class="content">
-                <h3>project 05</h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/img-1.jpg" alt="">
-            <div class="content">
-                <h3>project 06</h3>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- portfolio section ends -->
-
-<!-- contact section starts 
-
-<section class="contact" id="contact">
-
-    <h1 class="heading"> <span>contact</span> me </h1>
-
-    <form action="">
-        <input type="text" placeholder="your name" class="box">
-        <input type="email" placeholder="your email" class="box">
-        <input type="text" placeholder="subject" class="box">
-        <textarea name="" class="box" placeholder="your message" id="" cols="30" rows="10"></textarea>
-        <input type="submit" value="send message" class="btn">
-    </form>
-
-</section>
-
- contact section ends -->
-
-<div class="credits"> created by <span>Sadiq Shaikh</span> | all rights reserved </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-
+    <script>
+        document.querySelectorAll('.progress-bar div').forEach(bar => {
+            setTimeout(() => bar.style.width = bar.getAttribute('style').split(":")[1], 100);
+        });
+    </script>
 </body>
 </html>
